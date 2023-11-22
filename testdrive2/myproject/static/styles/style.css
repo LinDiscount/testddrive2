@@ -1,0 +1,28 @@
+ nav{
+    margin-bottom: 50px;
+        }
+ body{
+    width:1440px;
+    height:1146px;
+        }
+.nav-link, .navbar-brand{
+    margin-left: 20px;
+    color: white;
+    }
+h1, p{
+     margin-left: 50px;
+     font-size: 18px;
+      }
+.write{
+      border: 1px solid #621F1F;
+      width:50%;
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 10px;
+      border-radius: 10px;
+     }
+img{
+      margin-left: 50px;
+}
+

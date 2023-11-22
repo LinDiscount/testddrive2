@@ -1,0 +1,20 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Тестдрайв
+{% endblock %}
+
+{% block content %}
+    <h1>Создать таск</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.name }}<br>
+        {{ form.phone }}<br>
+        {{ form.email }}<br>
+        {{ form.auto }}<br>
+        {{ form.comment }}<br>
+      <button type="submit" class="btn btn-success" style="background-color: #621F1F;">Отправить</button>
+      <span>{{ error }}</span>
+
+    </form>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+{% block content %}
+    <h1>Активные записи</h1>
+    {% if tasks %}
+        {% for elem in tasks %}
+        <div class="write">
+            <p><span>Клиент:</span>{{ elem.name }}</p>
+            <p><span>Телефон:</span>{{ elem.phone }}</p>
+            <p><span>Email:</span>{{ elem.email }}</p>
+            <p><span>Автомобиль:</span>{{ elem.auto }}</p>
+        </div>
+        {% endfor %}
+    {% else %}
+        <p>У нас нет записей</p>
+    {% endif %}
+{% endblock %}
